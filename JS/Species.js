@@ -15,7 +15,7 @@ document.getElementById("Root").addEventListener("click", () =>{
 })})
 function creationboutonspecies(url){
     let btn = document.createElement('button');
-    btn.innerHTML="new"
+    btn.innerHTML="Page Suivante"
     document.getElementById("contexte").appendChild(btn)
     //console.log(url)
     btn.addEventListener("click",() =>{
@@ -36,7 +36,7 @@ function creationboutonspecies(url){
 }
 function creationboutonpspecies(url){
     let bouton = document.createElement('button');
-    bouton.innerHTML="precedent"
+    bouton.innerHTML="Page Precedente"
     document.getElementById("contexte").appendChild(bouton)
     //console.log(url)
     bouton.addEventListener("click",() =>{

@@ -32,13 +32,14 @@ document.getElementById("Vehicles").addEventListener("click", () =>{
         })
     })
 }
-function creationboutonstarships(url){
+function creationboutonvehicles(url){
     let btn = document.createElement('button');
-    btn.innerHTML="new"
+    btn.innerHTML="Page Suivante"
     document.getElementById("contexte").appendChild(btn)
     //console.log(url)
     btn.addEventListener("click",() =>{
         fetch(url).then (res => res.json()).then((data)=>{
+            document.getElementById("contexte1").style.padding="50px"
             //console.log(data);
             document.getElementById("contexte").innerHTML=""
             for (let i =0 ;i < data.results.length; i++){
@@ -53,9 +54,9 @@ function creationboutonstarships(url){
         })
     })
 }
-function creationboutonvehicles(url){
+function creationboutonpvehicles(url){
     let bouton = document.createElement('button');
-    bouton.innerHTML="precedent"
+    bouton.innerHTML="Page Precedente"
     document.getElementById("contexte").appendChild(bouton)
     //console.log(url)
     bouton.addEventListener("click",() =>{
